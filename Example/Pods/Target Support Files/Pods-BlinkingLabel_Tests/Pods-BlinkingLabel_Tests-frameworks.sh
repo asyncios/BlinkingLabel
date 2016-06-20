@@ -84,11 +84,13 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-BlinkingLabel_Tests/AFNetworking.framework"
   install_framework "Pods-BlinkingLabel_Tests/BlinkingLabel.framework"
   install_framework "Pods-BlinkingLabel_Tests/Expecta.framework"
   install_framework "Pods-BlinkingLabel_Tests/Specta.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-BlinkingLabel_Tests/AFNetworking.framework"
   install_framework "Pods-BlinkingLabel_Tests/BlinkingLabel.framework"
   install_framework "Pods-BlinkingLabel_Tests/Expecta.framework"
   install_framework "Pods-BlinkingLabel_Tests/Specta.framework"
